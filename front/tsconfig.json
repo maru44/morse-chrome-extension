@@ -13,6 +13,7 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
     "noEmit": true,
     "jsx": "react-jsx"
