@@ -10,6 +10,9 @@ const manifest = defineManifest({
   action: {
     default_popup: 'index.html',
   },
+  // content_security_policy: {
+  //   extension_pages: "default-src 'self'",
+  // },
 })
 
 // https://vitejs.dev/config/
