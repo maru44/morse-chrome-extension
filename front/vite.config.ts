@@ -10,8 +10,11 @@ const manifest = defineManifest({
   action: {
     default_popup: 'index.html',
   },
+  content_security_policy: {
+    extension_pages: "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'",
+  },
   // content_security_policy: {
-  //   extension_pages: "default-src 'self'",
+  //   sandbox: "sandbox allow-scripts; script-src 'self' 'unsafe-eval'; worker-src blob:",
   // },
 })
 

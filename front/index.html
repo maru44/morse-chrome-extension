@@ -7,11 +7,10 @@
     <title>Vite + React + TS</title>
     <script src="/wasm_exec.js"></script>
     <script>
-      const go = new Go();
-      console.log(go)
-      WebAssembly.instantiateStreaming(fetch(".src/gen/main.wasm"), go.importObject).then((result) => {
-          go.run(result.instance);
-      });
+    const go = new Go();
+    WebAssembly.instantiateStreaming(fetch(".src/gen/main.wasm"), go.importObject).then((result) => {
+        go.run(result.instance);
+    });
     </script>
     </head>
   <body>
